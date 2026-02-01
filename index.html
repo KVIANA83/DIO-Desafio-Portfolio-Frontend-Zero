@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="./css/style.css"/>
   <!-- BOOTSTRAP -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -103,41 +103,49 @@
     <h2>Conhecimento nas principais tecnologias do mercado</h2>
     <ul class="technologies__list">
       <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/filetype-java.svg" alt="Logo Java">
+        <img class="technologies__logo" src="./images/filetype-java.svg" alt="Logo Java">
       </li>
       <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/filetype-html.svg" alt="Logo HTML5">
+        <img class="technologies__logo" src="./images/filetype-html.svg" alt="Logo HTML5">
       </li>
       <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/filetype-css.svg" alt="Logo CSS3">
+        <img class="technologies__logo" src="./images/filetype-css.svg" alt="Logo CSS3">
       </li>
       <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/filetype-js.svg" alt="Logo JavaScript">
+        <img class="technologies__logo" src="./images/filetype-js.svg" alt="Logo JavaScript">
       </li>
       <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/bootstrap-fill.svg" alt="Logo Bootstrap">
+        <img class="technologies__logo" src="./images/bootstrap-fill.svg" alt="Logo Bootstrap">
       </li>
       <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/filetype-py.svg" alt="Logo Python">
+        <img class="technologies__logo" src="./images/filetype-py.svg" alt="Logo Python">
       </li>
       <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/filetype-sql.svg" alt="Logo MySQL">
+        <img class="technologies__logo" src="./images/filetype-sql.svg" alt="Logo MySQL">
       </li>
     </ul>
   </section>
 
   <!-- Seção de Projetos -->
   
-  <!-- Seção Sobre -->
+  <!-- ===================== SEÇÃO SOBRE ===================== -->
   <section id="sobre" class="about">
-    <img class="about__photo" src="assets/images/IMG_8059.K.jpg" alt="">
+    <!-- Foto principal da seção -->
+    <img class="about__photo" src="./images/IMG_8059.K.jpg" alt="Foto Karine Viana">
+    
+    <!-- Conteúdo principal da seção -->
     <div class="about__content1">
-      <img class="about__photo" src="assets/images/avatar.jpg" alt="">
+      <!-- Avatar menor -->
+      <img class="about__photo" src="./images/avatar.jpg" alt="Avatar Karine Viana">
+
+      <!-- Descrição sobre Karine -->
       <div class="about__description">
         <h2>Sobre mim</h2>
         <p>
           Karine Viana Caldas. Tenho 33 anos e concluí o curso técnico em Desenvolvimento de Sistemas, além de estar atualmente cursando Técnico em Administração. Minha jornada na área de tecnologia começou com um curso de design gráfico básico, o que despertou meu interesse pela programação. Após finalizar o curso de desenvolvimento de sistemas, decidi combinar meus conhecimentos de administração com a programação para desenvolver projetos pessoais. Alguns desses projetos estão em andamento, enquanto outros, concluídos por meio de bootcamps, podem ser encontrados no meu GitHub.
         </p>  
+
+        <!-- Botões para LinkedIn e currículo -->
         <div class="description__buttons">
           <a href="https://www.linkedin.com/in/karine-viana-caldas-aa03a2194/" target="_blank">
             <button class="btn btn--primary">
@@ -153,144 +161,137 @@
         </div>
       </div>
     </div> <!-- Fim div about__content1 -->
+
+    <!-- ===================== COLUNAS DE FORMAÇÃO E EXPERIÊNCIA ===================== -->
     <div class="about__content2">
+      <!-- COLUNA 1: FORMAÇÃO E EXPERIÊNCIA -->
       <div class="col1">
-        <!-- Formações -->
+        <!-- -------------------- FORMAÇÃO -------------------- -->
         <div class="row1">
           <h3>Formação</h3>
+          <!-- Licenciatura -->
+          <h4>Licenciatura em Ciência da Computação</h4>
+          <span>Mar 2025 - Atualmente</span>
+          <div class="about__icons">
+            <i class="bi bi-bank"></i>
+            <span>UPE - Universidade de Pernambuco</span>
+          </div>
+
+          <!-- Técnico Desenvolvimento de Sistemas -->
           <h4>Técnico em Desenvolvimento de Sistemas</h4>
           <span>Fev 2023 - Jul 2024</span>
           <div class="about__icons">
             <i class="bi bi-bank"></i>
             <span>ETE Advogado José David Gil Rodrigues</span>
           </div>
-          <!--
-          <div class="about__icons">
-            <i class="bi bi-mortarboard"></i>
-            <span>Pós-graduação Lato Sensu - Especialização</span>
-          </div>
-          -->
+
+          <!-- Técnico Administração -->
           <h4>Técnico em Administração</h4>
-          <span>Ago 2024 - Atualmente</span>
+          <span>Ago 2024 - Dez 2025</span>
           <div class="about__icons">
             <i class="bi bi-bank"></i>
             <span>ETE Advogado José David Gil Rodrigues</span>
           </div>
-        </div>
-        
-        <!-- Experiência Profissional -->
+        </div> <!-- Fim div row1 -->
+
+        <!-- -------------------- EXPERIÊNCIA PROFISSIONAL -------------------- -->
         <div class="row2">
           <h3>Experiências</h3>
-          <!-- Experiência 1: Lan House e Papelaria Global Net -->
+
+          <!-- Experiência 1 -->
           <h4>Atendente e Designer Gráfico</h4>
           <span>Lan House e Papelaria Global Net. Julho 2012 - Janeiro 2014</span>
-          <span>Atendimento ao cliente, criação de artes gráficas e vendas de materiais escolares e artigos para presente, além de suporte no uso dos serviços de lan house.</span>
           <ul class="about__list">
-            <li class="about__item">Criação de artes gráficas (cartões, banners, convites, etc.);</li>
-            <li class="about__item">Atendimento ao cliente e vendas de produtos;</li>
-            <li class="about__item">Suporte técnico em serviços de lan house.</li>
+            <li class="about__item">Criação de artes gráficas (cartões, banners, convites, etc.)</li>
+            <li class="about__item">Atendimento ao cliente e vendas de produtos</li>
+            <li class="about__item">Suporte técnico em serviços de lan house</li>
           </ul>
-          <!-- Experiência 2: Contax -->
+
+          <!-- Experiência 2 -->
           <h4>Operadora de Teleatendimento</h4>
           <span>Contax. Janeiro 2014 - Setembro 2015</span>
-          <span>Atendimento receptivo para os produtos Oi Fixo e Velox ADSL, atuando nos setores de SAC, reclamações, agendamento de visita técnica e rentabilização.</span>
           <ul class="about__list">
-            <li class="about__item">Atendimento no setor de SAC e reclamações;</li>
-            <li class="about__item">Agendamento de visitas técnicas para reparo, mudança de endereço e instalação de ponto/extensão de telefone e internet (setor CLICK);</li>
-            <li class="about__item">Rentabilização de produtos e serviços.</li>
+            <li class="about__item">Atendimento no setor de SAC e reclamações</li>
+            <li class="about__item">Agendamento de visitas técnicas</li>
+            <li class="about__item">Rentabilização de produtos e serviços</li>
           </ul>
-          <!-- Experiência 3: Datamétrica -->
+
+          <!-- Experiência 3 -->
           <h4>Operadora de Telemarketing</h4>
           <span>Datamétrica. Fevereiro 2017 - Julho 2018</span>
-          <span>Atendimento receptivo para os produtos NET TV, NET Fone e NET Virtua, além de atuação como N1 generalista e em recuperação de clientes (CRC).</span>
           <ul class="about__list">
-            <li class="about__item">Atendimento receptivo para suporte técnico e comercial;</li>
-            <li class="about__item">Atuação como N1 generalista para resolução de problemas;</li>
-            <li class="about__item">Negociação e acordos para retenção de clientes (CRC).</li>
+            <li class="about__item">Atendimento receptivo para suporte técnico e comercial</li>
+            <li class="about__item">Atuação como N1 generalista</li>
+            <li class="about__item">Negociação e retenção de clientes</li>
           </ul>
-          <!-- Experiência 4: Oftalmo Zona Sul -->
+
+          <!-- Experiência 4 -->
           <h4>Estagiária - Recepcionista</h4>
           <span>Oftalmo Zona Sul. Setembro 2024 - Atualmente</span>
-          <span>Atuação na recepção de pacientes, triagem e confirmação de consultas, além de atividades administrativas em clínica oftalmológica.</span>
           <ul class="about__list">
-            <li class="about__item">Recepção e triagem de pacientes;</li>
-            <li class="about__item">Confirmação de consultas e suporte administrativo;</li>
-            <li class="about__item">Apoio às rotinas administrativas da clínica.</li>
+            <li class="about__item">Recepção e triagem de pacientes</li>
+            <li class="about__item">Confirmação de consultas e suporte administrativo</li>
+            <li class="about__item">Apoio às rotinas administrativas da clínica</li>
           </ul>
         </div> <!-- Fim div row2 -->
+      </div> <!-- Fim col1 -->
 
-      <!-- Cursos -->
+      <!-- COLUNA 2: CURSOS / BOOTCAMPS -->
       <div class="col2">
         <h3>Cursos</h3>
+
         <div id="accordion">
+          <!-- Curso 1 -->
           <div class="accordion__item active">
             <button class="accordion__header start">
               <span>Versionamento de Código com Git e GitHub</span>
               <i class="bi bi-caret-down-fill"></i>
             </button>
             <div class="accordion__body">
-              <p>
-                Digital Innovation One. Fev 2023. 2h.
-              </p>
-              <p>
-                O que é versionamento de código, Git e GitHub. Como instalar e configurar o Git em diferentes sistemas 
-                operacionais e como autenticar via Token e SSH. Como manusear repositórios, indo desde a criação e clonagem 
-                até o gerenciamento de branches, passando por todas as etapas de salvar, desfazer e sincronizar alterações 
-                com o repositório remoto. 
-              </p>
+              <p>Digital Innovation One. Fev 2023. 2h.</p>
+              <p>O que é versionamento de código, Git e GitHub, instalação, configuração, autenticação via Token e SSH e gerenciamento de branches.</p>
             </div>
-          </div> <!-- Fim div accordion__item -->
-          
-          <!-- Novos cursos adicionados -->
+          </div> <!-- Fim accordion__item -->
+
+          <!-- Curso 2 -->
           <div class="accordion__item">
             <button class="accordion__header">
               <span>Informática Básica: Word, Excel, PowerPoint e Internet Explorer 7.0</span>
               <i class="bi bi-caret-down-fill"></i>
             </button>
             <div class="accordion__body">
-              <p>
-                Projeto Solidário. 2011. 80h.
-              </p>
-              <p>
-                Curso concluído, abrangendo habilidades essenciais em aplicativos de produtividade e navegação na web.
-              </p>
+              <p>Projeto Solidário. 2011. 80h.</p>
+              <p>Habilidades essenciais em aplicativos de produtividade e navegação na web.</p>
             </div>
-          </div> <!-- Fim div accordion__item -->
-          
+          </div> <!-- Fim accordion__item -->
+
+          <!-- Curso 3 -->
           <div class="accordion__item">
             <button class="accordion__header">
-              <span>Design Gráfico Básico: CorelDraw 11, Photoshop 7.0, PageMaker 6.5</span>
+              <span>Design Gráfico Básico: CorelDraw, Photoshop, PageMaker</span>
               <i class="bi bi-caret-down-fill"></i>
             </button>
             <div class="accordion__body">
-              <p>
-                Projeto Solidário. 2011. 80h.
-              </p>
-              <p>
-                Curso de informática gráfica básica, cobrindo o uso de ferramentas como CorelDraw 11, Photoshop 7.0 e PageMaker 6.5 
-                para design e edição gráfica.
-              </p>
+              <p>Projeto Solidário. 2011. 80h.</p>
+              <p>Curso de informática gráfica básica, cobrindo ferramentas de design e edição gráfica.</p>
             </div>
-          </div> <!-- Fim div accordion__item -->
+          </div> <!-- Fim accordion__item -->
+
+          <!-- Curso 4 -->
           <div class="accordion__item">
             <button class="accordion__header">
               <span>Demais Cursos EAD Realizados</span>
               <i class="bi bi-caret-down-fill"></i>
             </button>
             <div class="accordion__body">
-              <p>
-                Diversos cursos concluídos nas plataformas Fundação Bradesco, DIO - Digital Innovation One (bootcamps), 
-                e IFRS EAD. Para mais detalhes sobre os cursos realizados, acesse meu LinkedIn: 
-                <a href="https://www.linkedin.com/in/karine-viana-caldas-aa03a2194" target="_blank">
-                  Karine Viana Caldas
-                </a>.
-              </p>
+              <p>Diversos cursos concluídos nas plataformas Fundação Bradesco, DIO e IFRS EAD. Detalhes completos no meu LinkedIn: <a href="https://www.linkedin.com/in/karine-viana-caldas-aa03a2194" target="_blank">Karine Viana Caldas</a>.</p>
             </div>
-          </div> <!-- Fim div accordion__item -->
-        </div> <!-- Fim div accordion -->
-      </div> <!-- Fim div accordion -->
-    </div> <!-- Fim div about__content1 -->
+          </div> <!-- Fim accordion__item -->
+        </div> <!-- Fim accordion -->
+      </div> <!-- Fim col2 -->
+    </div> <!-- Fim about__content2 -->
   </section>
+
   
   <!-- Seção de Contato -->
   <section id="contato" class="contact">
@@ -333,7 +334,7 @@
     </p>
   </footer>
   <!-- JAVASCRIPT -->
-  <script src="assets/js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
 
