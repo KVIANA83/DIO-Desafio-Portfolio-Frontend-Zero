@@ -1,30 +1,43 @@
-const toggleTheme = document.getElementById("toggleTheme");
-const rootHtml = document.documentElement;
-const accordionHeaders = document.querySelectorAll(".accordion__header");
-const menuLinks = document.querySelectorAll(".menu__link");
+// ===================== ACCORDION =====================
+const accordions = document.querySelectorAll('.accordion__item');
 
-// Alterar tema
-function changeTheme() {
-  const currentTheme = rootHtml.getAttribute("data-theme");
-  rootHtml.setAttribute("data-theme", currentTheme === "dark" ? "light" : "dark");
-  toggleTheme.classList.toggle("bi-sun");
-  toggleTheme.classList.toggle("bi-moon-stars");
-}
-toggleTheme.addEventListener("click", changeTheme);
+accordions.forEach(item => {
+  const header = item.querySelector('.accordion__header');
 
-// Accordion
-accordionHeaders.forEach(header => {
-  header.addEventListener("click", () => {
-    const item = header.parentElement;
-    item.classList.toggle("active");
+  header.addEventListener('click', () => {
+    // Fecha outros itens
+    accordions.forEach(i => {
+      if(i !== item) i.classList.remove('active');
+    });
+    // Abre ou fecha o clicado
+    item.classList.toggle('active');
   });
 });
 
-// Menu ativo
-menuLinks.forEach(link => {
-  link.addEventListener("click", () => {
-    menuLinks.forEach(l => l.classList.remove("active"));
-    link.classList.add("active");
+// ===================== MENU MOBILE =====================
+const mobileLinks = document.querySelectorAll('.nav--mobile .menu__link');
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Remove active de todos
+    mobileLinks.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
   });
 });
 
+// ===================== MENU DESKTOP =====================
+const desktopLinks = document.querySelectorAll('.menu--principal .menu__link');
+desktopLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    desktopLinks.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+  });
+});
+
+// ===================== SCROLL SUAVE =====================
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' });
+  });
+});

@@ -401,7 +401,7 @@ main {
 }
 
 .about__photo {
-  width: 100%;
+  width: 50%;
   object-fit: cover;
   object-position: center;
   pointer-events: none;
@@ -694,5 +694,4 @@ footer p {
   }
 
 }
-
 
